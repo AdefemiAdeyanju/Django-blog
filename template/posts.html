@@ -1,0 +1,40 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <div class = "blog">
+    <title> BLOG </title>
+    </div>
+    <meta name="Blog Post" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+      <div id="container">
+        <div id="header"><b>BLOG TEMPLATE</b>
+          <h2>Soft blog template...</h2>
+
+        </div>
+        <div id="horizontal"> <a href="">Home</a> <a href="">Articles</a> <a href="">Contact</a> 
+        </div>
+
+        <div id="right-column">
+          <div id="searchbox">
+            <form action="search" />
+            <input name="searchQuery" class="text" type="text" />
+            <input type="submit" value="Search" name="B1" class="button" />
+         
+     <div id="content">
+          <h2>{{posts.title}}<span class="black"></span></h2>
+          <p> {{posts.body}} </p>
+          <p>> Posted on: {{posts.created_at}}</p>
+    
+      </div>
+        <div id="footer"> <a href=""></a> 
+        </div>
+      </div>
+    
+    <script src="" async defer></script>
+  </body>
+</html>
